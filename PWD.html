@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Flickering Color</title>
+    <style>
+        .flicker-box {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: white;
+            
+            /* 1. Name of animation, 2. Duration (0.1s), 3. Loop infinitely */
+            animation: fastFlicker 0.1s infinite;
+        }
+
+        /* Define the rapid color shifts */
+        @keyframes fastFlicker {
+            0%   { background-color: #FF0000; } /* Red */
+            25%  { background-color: #00FF00; } /* Neon Green */
+            50%  { background-color: #0000FF; } /* Blue */
+            75%  { background-color: #FFFF00; } /* Yellow */
+            100% { background-color: #FF00FF; } /* Magenta */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flicker-box">FLICKER</div>
+
+</body>
+</html>
